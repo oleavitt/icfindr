@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8CA6CED11C0BFCBC00268CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */; };
-		8CA6CED31C0BFCBC00268CAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CED21C0BFCBC00268CAE /* ViewController.swift */; };
 		8CA6CED61C0BFCBC00268CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CED41C0BFCBC00268CAE /* Main.storyboard */; };
 		8CA6CED91C0BFCBC00268CAE /* ICFindr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CED71C0BFCBC00268CAE /* ICFindr.xcdatamodeld */; };
 		8CA6CEDB1C0BFCBC00268CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CEDA1C0BFCBC00268CAE /* Assets.xcassets */; };
 		8CA6CEDE1C0BFCBC00268CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CEDC1C0BFCBC00268CAE /* LaunchScreen.storyboard */; };
+		8CA6CEE71C0BFDA700268CAE /* ICFHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA6CECD1C0BFCBC00268CAE /* ICFindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICFindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CA6CED21C0BFCBC00268CAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CA6CED51C0BFCBC00268CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CA6CED81C0BFCBC00268CAE /* ICFindr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ICFindr.xcdatamodel; sourceTree = "<group>"; };
 		8CA6CEDA1C0BFCBC00268CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA6CEDD1C0BFCBC00268CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA6CEDF1C0BFCBC00268CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICFHomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		8CA6CECF1C0BFCBC00268CAE /* ICFindr */ = {
 			isa = PBXGroup;
 			children = (
+				8CA6CEE51C0BFD5400268CAE /* ViewControllers */,
 				8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */,
-				8CA6CED21C0BFCBC00268CAE /* ViewController.swift */,
 				8CA6CED41C0BFCBC00268CAE /* Main.storyboard */,
 				8CA6CEDA1C0BFCBC00268CAE /* Assets.xcassets */,
 				8CA6CEDC1C0BFCBC00268CAE /* LaunchScreen.storyboard */,
@@ -65,6 +65,14 @@
 				8CA6CED71C0BFCBC00268CAE /* ICFindr.xcdatamodeld */,
 			);
 			path = ICFindr;
+			sourceTree = "<group>";
+		};
+		8CA6CEE51C0BFD5400268CAE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA6CED31C0BFCBC00268CAE /* ViewController.swift in Sources */,
 				8CA6CED91C0BFCBC00268CAE /* ICFindr.xcdatamodeld in Sources */,
+				8CA6CEE71C0BFDA700268CAE /* ICFHomeTableViewController.swift in Sources */,
 				8CA6CED11C0BFCBC00268CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
