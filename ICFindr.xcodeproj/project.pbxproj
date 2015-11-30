@@ -13,6 +13,7 @@
 		8CA6CEDB1C0BFCBC00268CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CEDA1C0BFCBC00268CAE /* Assets.xcassets */; };
 		8CA6CEDE1C0BFCBC00268CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CEDC1C0BFCBC00268CAE /* LaunchScreen.storyboard */; };
 		8CA6CEE71C0BFDA700268CAE /* ICFHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */; };
+		8CA6CEEA1C0C04FE00268CAE /* ICFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CEE91C0C04FE00268CAE /* ICFTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8CA6CEDD1C0BFCBC00268CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CA6CEDF1C0BFCBC00268CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICFHomeTableViewController.swift; sourceTree = "<group>"; };
+		8CA6CEE91C0C04FE00268CAE /* ICFTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICFTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		8CA6CECF1C0BFCBC00268CAE /* ICFindr */ = {
 			isa = PBXGroup;
 			children = (
+				8CA6CEE81C0C042500268CAE /* Views */,
 				8CA6CEE51C0BFD5400268CAE /* ViewControllers */,
 				8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */,
 				8CA6CED41C0BFCBC00268CAE /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CA6CEE81C0C042500268CAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CA6CEE91C0C04FE00268CAE /* ICFTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				8CA6CED91C0BFCBC00268CAE /* ICFindr.xcdatamodeld in Sources */,
 				8CA6CEE71C0BFDA700268CAE /* ICFHomeTableViewController.swift in Sources */,
+				8CA6CEEA1C0C04FE00268CAE /* ICFTableViewCell.swift in Sources */,
 				8CA6CED11C0BFCBC00268CAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ICFindr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleavittapps.ICFindr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ICFindr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oleavittapps.ICFindr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
