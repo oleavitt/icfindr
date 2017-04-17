@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DF3FA889F54AEC767B9F57A /* Pods_ICFindr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5D47D037B16B23B403E9B2 /* Pods_ICFindr.framework */; };
 		8CA6CED11C0BFCBC00268CAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */; };
 		8CA6CED61C0BFCBC00268CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6CED41C0BFCBC00268CAE /* Main.storyboard */; };
 		8CA6CED91C0BFCBC00268CAE /* ICFindr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6CED71C0BFCBC00268CAE /* ICFindr.xcdatamodeld */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5D47D037B16B23B403E9B2 /* Pods_ICFindr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ICFindr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA6CECD1C0BFCBC00268CAE /* ICFindr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICFindr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA6CED01C0BFCBC00268CAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CA6CED51C0BFCBC00268CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8CA6CEDF1C0BFCBC00268CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CA6CEE61C0BFDA700268CAE /* ICFHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICFHomeTableViewController.swift; sourceTree = "<group>"; };
 		8CA6CEE91C0C04FE00268CAE /* ICFTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICFTableViewCell.swift; sourceTree = "<group>"; };
+		CFA9A72C515FD2A23837D330 /* Pods-ICFindr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICFindr.release.xcconfig"; path = "Pods/Target Support Files/Pods-ICFindr/Pods-ICFindr.release.xcconfig"; sourceTree = "<group>"; };
+		EC1DF250C6BBB81B079E586E /* Pods-ICFindr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ICFindr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ICFindr/Pods-ICFindr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DF3FA889F54AEC767B9F57A /* Pods_ICFindr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21FA73D21B521AB7E9505B5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E5D47D037B16B23B403E9B2 /* Pods_ICFindr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC6F55BC187FC3C6EF7DB7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC1DF250C6BBB81B079E586E /* Pods-ICFindr.debug.xcconfig */,
+				CFA9A72C515FD2A23837D330 /* Pods-ICFindr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8CA6CEC41C0BFCBB00268CAE = {
 			isa = PBXGroup;
 			children = (
 				8CA6CECF1C0BFCBC00268CAE /* ICFindr */,
 				8CA6CECE1C0BFCBC00268CAE /* Products */,
+				4EC6F55BC187FC3C6EF7DB7E /* Pods */,
+				21FA73D21B521AB7E9505B5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,9 +117,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CA6CEE21C0BFCBC00268CAE /* Build configuration list for PBXNativeTarget "ICFindr" */;
 			buildPhases = (
+				D1863548DF6C2C40225E6B44 /* [CP] Check Pods Manifest.lock */,
 				8CA6CEC91C0BFCBB00268CAE /* Sources */,
 				8CA6CECA1C0BFCBB00268CAE /* Frameworks */,
 				8CA6CECB1C0BFCBB00268CAE /* Resources */,
+				9B41ECD4D2A33B2005928BB8 /* [CP] Embed Pods Frameworks */,
+				7BB5B82DA448407A3875C9FB /* [CP] Copy Pods Resources */,
+				8C8A35641EA53A8900BD2D47 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -153,6 +181,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BB5B82DA448407A3875C9FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICFindr/Pods-ICFindr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C8A35641EA53A8900BD2D47 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+		};
+		9B41ECD4D2A33B2005928BB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ICFindr/Pods-ICFindr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1863548DF6C2C40225E6B44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CA6CEC91C0BFCBB00268CAE /* Sources */ = {
@@ -278,6 +368,7 @@
 		};
 		8CA6CEE31C0BFCBC00268CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1DF250C6BBB81B079E586E /* Pods-ICFindr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -292,6 +383,7 @@
 		};
 		8CA6CEE41C0BFCBC00268CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA9A72C515FD2A23837D330 /* Pods-ICFindr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -1,0 +1,9 @@
+# Set max line length before warning for default length of 120
+line_length: 400
+
+disabled_rules:
+  - trailing_whitespace
+  - todo
+
+excluded:
+  - Pods
